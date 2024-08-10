@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+
+}
+
+:root {
+    --color: rgb(47, 209, 155);
+    --font: "Poppins", sans-serif;
+    --font2: "League Spartan", sans-serif;
+    --radius: 15px;
+}
+
+.head {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    /* transition: height .5s ease-in; */
+    align-items: center;
+    font-size: 20px;
+    font-family: var(--font2);
+    justify-content: space-between;
+    padding: 10px 7%;
+
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+
+.nav li {
+    padding: 10px 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav li a:hover {
+    color: rgb(34, 112, 112);
+}
+
+.drop1 {
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    padding: 10px 20px;
+
+}
+
+.drop1 i {
+    font-size: 15px;
+    padding-left: 5px;
+    margin-top: 2px;
+}
+
+.drop1:hover .Course {
+    display: block;
+    text-decoration: none;
+}
+
+.Course {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    z-index: 1000;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.Course a {
+    display: block;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+}
+
+.Course a:hover {
+    background-color: rgb(34, 112, 112);
+    color: #fff;
+}
+
+.drop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-container:hover .profile {
+    display: block;
+}
+
+.profile {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    z-index: 1000;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.profile a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.icon {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.icon:hover {
+    background-color: #b79999;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    justify-content: space-between;
+}
+
+.checkout {
+    /* margin: auto; */
+    width: 100%;
+    margin: 20px 20%;
+    max-width: 600px;
+}
+
+.checkout h1 {
+    margin: 2.5rem 0;
+}
+
+.billing h2 {
+    margin-bottom: 1.6rem;
+
+}
+
+.world {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .3rem;
+    gap: 20px;
+}
+
+#country {
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.country i {
+    position: relative;
+    left: -33%;
+    top: 37px;
+    font-size: 16px;
+}
+
+.para {
+    font-size: 14px;
+    padding-top: 10px;
+    font-family: var(--font);
+    margin-bottom: 2.8rem;
+}
+
+.payment-method {
+    margin-bottom: 2.6rem;
+}
+
+.method {
+    display: flex;
+    justify-content: space-between;
+}
+
+.method h2 {
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-weight: bold;
+
+}
+
+.mode {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid rgb(9, 7, 1);
+}
+
+.mode svg {
+    margin-top: 0;
+    border: 1px solid gainsboro;
+    padding: 4px;
+    height: 20px;
+    width: 40px;
+}
+
+.mode span {
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+.mode i {
+    border: 1px solid;
+    padding: 4px 8px;
+    margin-left: 4px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#Card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dcard img {
+    height: 30px;
+    border: 1px solid rgb(203, 197, 197);
+    border-radius: 6px;
+    padding: 4px 4px;
+}
+
+label {
+    font-size: 13px;
+}
+
+#req {
+    color: gray;
+    position: relative;
+    left: 41%;
+    font-size: 12px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    display: flex;
+
+
+    &>img {
+        width: 50px;
+        border-radius: 4px;
+        height: 50px;
+
+    }
+
+    &>h4 {
+        margin-left: 10px;
+    }
+
+}
+
+#rate {
+    text-decoration: line-through;
+}
+
+
+
+/* summary */
+
+.sub-container {
+    background-color: aliceblue;
+    margin-left: 10%;
+}
+
+.summary {
+    padding: 13%;
+    height: 100vh;
+    width: 80%;
+}
+
+.order-details h3,
+.summary h3 {
+    font-size: 24px;
+    padding: 20px 0px;
+    font-family: var(--font2);
+    font-weight: 600;
+
+}
+
+.price,
+.discounts,
+.total {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.summary p {
+    font-size: 13px;
+    font-family: var(--font);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.summary p a {
+    text-decoration: none;
+}
+
+.complete {
+    padding: 15px 20px;
+    width: 370px;
+    background-color: var(--color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+
+}

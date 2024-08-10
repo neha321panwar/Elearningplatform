@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" href="./Image/logo2.png" type="image/icon type">
+
+    <title>login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="Image/loginbg.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="x-mark" id="x-mark">
+            <span onclick="document.getElementById('x-mark').style.display='none'" class="close" title="Close"
+                style="font-size: 35px;">&times;</span>
+        </div>
+        <div class="head">
+            <h1>Login now</h1>
+            <p>Hi, Welcome back <img src="./Image/wave.png" alt="wave"></p>
+
+            <section>
+                <button class="btn1"><a href="./www.google.com"> Login with Google</button><img id="img1"
+                    src="./Image/google.png" alt="google">
+                </a>
+                <br><br>
+                <div class="login">
+                    <div class="divider">Or login with Google</div> <br> <br>
+                    <!-- <div class="line"></div>
+                    <div class="cont">Or login with Google</div>
+                    <div class="line"></div> -->
+                </div>
+                <form>
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="email" placeholder="Enter your email id" name="email" required>
+                    <br><br>
+
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter your password" name="password" required><i
+                        class="fa-solid fa-eye-slash"></i>
+                </form>
+                <br>
+                <div class="rem">
+                    <div class="label">
+                        <label>
+                            <input type="checkbox" checked="unchecked" name="remember"> Remember me
+
+                        </label>
+                    </div>
+                    <div id="passw"><a href="#">Forgot Password?</a></div>
+                </div>
+                <button class="btn"><a href="./index.html">Login</a></button>
+                <div class="par">
+                    <p>Not registered yet? <a href="#">Create an account</a> <span><a href="./Sign.html"
+                                style="color: crimson;">Sign
+                                up</a></span></p>
+                </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: rgb(47, 209, 155);
+    --font: "Poppins", sans-serif;
+    --font2: "League Spartan", sans-serif;
+    --radius: 15px;
+}
+
+
+.container img {
+    filter: blur(10px);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 2.5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.main {
+    animation: fadeIn 1s ease-out;
+    animation: rotateIn 2s ease-in;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(111.4deg, rgb(55, 168, 192) -0.2%, rgb(103, 187, 125) 100.2%);
+    max-width: 450px;
+    top: 20%;
+    left: 36%;
+    position: absolute;
+    margin: auto;
+}
+
+.x-mark {
+    position: absolute;
+    left: 92%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.x-mark i {
+    font-size: 20px;
+}
+
+.head {
+    padding: 20px;
+}
+
+.head p img {
+    width: 20px;
+    margin-top: 7px;
+    height: 20px;
+}
+
+.btn1 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    width: 390px;
+    cursor: pointer;
+}
+
+.btn1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+button {
+    align-items: center;
+}
+
+#img1 {
+    position: relative;
+    right: 72%;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+#login span img {
+    width: 70px;
+    position: relative;
+    top: 15px;
+}
+
+.login {
+    display: flex;
+    gap: 3px;
+}
+
+.divider {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.divider::before,
+.divider::after {
+    flex: 1;
+    width: 120px;
+    content: '';
+    padding: 1px;
+    background-color: rgb(15, 15, 15);
+    margin: 5px;
+}
+
+form input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 390px;
+}
+
+form i {
+    position: relative;
+    right: 28px;
+    cursor: pointer;
+}
+
+.label input[type=checkbox] {
+    height: 20px;
+    position: relative;
+    top: 5px;
+    padding: 0;
+}
+
+.label i {
+    height: 20px;
+}
+
+.rem {
+    display: flex;
+    gap: 40%;
+}
+
+#passw a {
+    text-decoration: none;
+}
+
+.btn {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(28, 28, 255);
+    padding: 10px;
+    width: 390px;
+}
+
+.btn a {
+    text-decoration: none;
+    letter-spacing: 2;
+    color: #fff;
+}
+
+.par {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.par a:first-child {
+    text-decoration: none;
+}
+
+/* Dialog Box Styling */
+dialog {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: var(--font);
+}
+
+dialog h3 {
+    margin-bottom: 10px;
+}
+
+dialog p {
+    margin-bottom: 20px;
+}
